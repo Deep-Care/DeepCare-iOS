@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		03AD42DC23E56B2500622AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AD42DA23E56B2500622AEC /* Main.storyboard */; };
 		03AD42DE23E56B2600622AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AD42DD23E56B2600622AEC /* Assets.xcassets */; };
 		03AD42E123E56B2600622AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AD42DF23E56B2600622AEC /* LaunchScreen.storyboard */; };
+		560E818C23E56D1D007722CE /* EnrollFirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */; };
+		560E818E23E56D34007722CE /* EnrollSecondPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */; };
+		560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */; };
+		560E819223E56D62007722CE /* EnrollSecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E819123E56D61007722CE /* EnrollSecondPageViewController.swift */; };
 		DB0B5D7DA2FC814015D2074B /* Pods_DeepCare_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760B4BF5FD72176E0C3BE086 /* Pods_DeepCare_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		03AD42DD23E56B2600622AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03AD42E023E56B2600622AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03AD42E223E56B2600622AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollFirstPage.storyboard; sourceTree = "<group>"; };
+		560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollSecondPage.storyboard; sourceTree = "<group>"; };
+		560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollFirstPageViewController.swift; sourceTree = "<group>"; };
+		560E819123E56D61007722CE /* EnrollSecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollSecondPageViewController.swift; sourceTree = "<group>"; };
 		5D446593A9712C71404A3EDA /* Pods-DeepCare-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepCare-iOS.release.xcconfig"; path = "Target Support Files/Pods-DeepCare-iOS/Pods-DeepCare-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		760B4BF5FD72176E0C3BE086 /* Pods_DeepCare_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepCare_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF0DFAF2EFE9C9B66AD244C /* Pods-DeepCare-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepCare-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DeepCare-iOS/Pods-DeepCare-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +71,10 @@
 		03AD42D323E56B2500622AEC /* DeepCare-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				560E819323E56D65007722CE /* Main */,
+				560E818A23E56CBD007722CE /* Registration */,
 				03AD42D423E56B2500622AEC /* AppDelegate.swift */,
 				03AD42D623E56B2500622AEC /* SceneDelegate.swift */,
-				03AD42D823E56B2500622AEC /* ViewController.swift */,
-				03AD42DA23E56B2500622AEC /* Main.storyboard */,
 				03AD42DD23E56B2600622AEC /* Assets.xcassets */,
 				03AD42DF23E56B2600622AEC /* LaunchScreen.storyboard */,
 				03AD42E223E56B2600622AEC /* Info.plist */,
@@ -82,13 +90,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		560E818A23E56CBD007722CE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */,
+				560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */,
+				560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */,
+				560E819123E56D61007722CE /* EnrollSecondPageViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		560E819323E56D65007722CE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				03AD42DA23E56B2500622AEC /* Main.storyboard */,
+				03AD42D823E56B2500622AEC /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		8CDAEE402B16680FADFC9A81 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				EBF0DFAF2EFE9C9B66AD244C /* Pods-DeepCare-iOS.debug.xcconfig */,
 				5D446593A9712C71404A3EDA /* Pods-DeepCare-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AD42E123E56B2600622AEC /* LaunchScreen.storyboard in Resources */,
+				560E818E23E56D34007722CE /* EnrollSecondPage.storyboard in Resources */,
 				03AD42DE23E56B2600622AEC /* Assets.xcassets in Resources */,
+				560E818C23E56D1D007722CE /* EnrollFirstPage.storyboard in Resources */,
 				03AD42DC23E56B2500622AEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +238,8 @@
 			files = (
 				03AD42D923E56B2500622AEC /* ViewController.swift in Sources */,
 				03AD42D523E56B2500622AEC /* AppDelegate.swift in Sources */,
+				560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */,
+				560E819223E56D62007722CE /* EnrollSecondPageViewController.swift in Sources */,
 				03AD42D723E56B2500622AEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
