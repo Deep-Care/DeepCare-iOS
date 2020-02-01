@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0310492F23E60B5C00F9BE2B /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0310492E23E60B5C00F9BE2B /* Color.xcassets */; };
+		0310493223E62E9F00F9BE2B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310493123E62E9F00F9BE2B /* UIView+Extension.swift */; };
 		03AD42D523E56B2500622AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD42D423E56B2500622AEC /* AppDelegate.swift */; };
 		03AD42D723E56B2500622AEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD42D623E56B2500622AEC /* SceneDelegate.swift */; };
 		03AD42D923E56B2500622AEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD42D823E56B2500622AEC /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0310492E23E60B5C00F9BE2B /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		0310493123E62E9F00F9BE2B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		03AD42D123E56B2500622AEC /* DeepCare-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeepCare-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AD42D423E56B2500622AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03AD42D623E56B2500622AEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0310493023E62E4100F9BE2B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0310493123E62E9F00F9BE2B /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		03AD42C823E56B2500622AEC = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		03AD42D323E56B2500622AEC /* DeepCare-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0310493023E62E4100F9BE2B /* Extension */,
 				560E819323E56D65007722CE /* Main */,
 				560E818A23E56CBD007722CE /* Registration */,
 				03AD42D423E56B2500622AEC /* AppDelegate.swift */,
@@ -240,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0310493223E62E9F00F9BE2B /* UIView+Extension.swift in Sources */,
 				03AD42D923E56B2500622AEC /* ViewController.swift in Sources */,
 				03AD42D523E56B2500622AEC /* AppDelegate.swift in Sources */,
 				560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */,
@@ -392,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WG2S2TXYL2;
 				INFOPLIST_FILE = "DeepCare-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +424,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WG2S2TXYL2;
 				INFOPLIST_FILE = "DeepCare-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
