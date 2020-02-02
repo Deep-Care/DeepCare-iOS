@@ -2,23 +2,22 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Qu-Gj-rS8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Enroll First Page View Controller-->
         <scene sceneID="6Vg-Oe-NA5">
             <objects>
-                <viewController id="6Qu-Gj-rS8" sceneMemberID="viewController">
+                <viewController id="6Qu-Gj-rS8" customClass="EnrollFirstPageViewController" customModule="DeepCare_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xnv-XN-N3l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoEnroll" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-lR-4SB">
-                                <rect key="frame" x="142.5" y="204" width="129" height="132"/>
+                                <rect key="frame" x="78" y="204" width="258" height="264"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSw-oL-7OV">
                                 <rect key="frame" x="20" y="441" width="65" height="33"/>
@@ -77,15 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fn7-rM-Jo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="115.84821428571428"/>
-        </scene>
-        <!--EnrollSecondPage-->
-        <scene sceneID="76r-ke-upx">
-            <objects>
-                <viewControllerPlaceholder storyboardName="EnrollSecondPage" id="Zgz-rF-mZb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xy7-np-9cD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="560" y="59"/>
+            <point key="canvasLocation" x="-120" y="108"/>
         </scene>
     </scenes>
     <resources>

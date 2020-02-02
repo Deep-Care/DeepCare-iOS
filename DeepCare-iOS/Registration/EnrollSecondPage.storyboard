@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-bd-nhC">
-                                <rect key="frame" x="24" y="-153.5" width="227" height="67.5"/>
+                                <rect key="frame" x="24" y="-202.5" width="227" height="67.5"/>
                                 <string key="text">Who do you want 
 to talk with?</string>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="28"/>
@@ -25,13 +25,13 @@ to talk with?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrT-iB-NH8">
-                                <rect key="frame" x="24" y="344" width="366" height="310"/>
+                                <rect key="frame" x="24" y="295" width="366" height="359"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUF-rY-GJ1">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="add the talker’s name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-cE-zE8">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                                 <color key="textColor" name="dirtBrown"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -41,7 +41,7 @@ to talk with?</string>
                                             <constraint firstAttribute="trailing" secondItem="bhc-cE-zE8" secondAttribute="trailing" id="A73-3S-YcY"/>
                                             <constraint firstItem="bhc-cE-zE8" firstAttribute="top" secondItem="MUF-rY-GJ1" secondAttribute="top" id="OhQ-fs-Dbu"/>
                                             <constraint firstAttribute="bottom" secondItem="bhc-cE-zE8" secondAttribute="bottom" id="T0R-yV-kGC"/>
-                                            <constraint firstAttribute="height" constant="48" id="XPq-M2-eWI"/>
+                                            <constraint firstAttribute="height" constant="50" id="XPq-M2-eWI"/>
                                             <constraint firstItem="bhc-cE-zE8" firstAttribute="leading" secondItem="MUF-rY-GJ1" secondAttribute="leading" id="d6d-ah-E4I"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -52,15 +52,15 @@ to talk with?</string>
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="48"/>
+                                                <real key="value" value="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icThreeOvalN" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-xw-7kB">
-                                        <rect key="frame" x="175" y="68" width="16" height="72"/>
+                                        <rect key="frame" x="175" y="94" width="16" height="72"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3T-4Y-djt">
-                                        <rect key="frame" x="109" y="160" width="148.5" height="48"/>
+                                        <rect key="frame" x="109" y="210" width="148.5" height="48"/>
                                         <string key="text">Do you have any
 sample videos?</string>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
@@ -68,7 +68,7 @@ sample videos?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
-                                        <rect key="frame" x="18" y="228" width="330" height="82"/>
+                                        <rect key="frame" x="18" y="277" width="330" height="82"/>
                                         <state key="normal" image="btAddVideoN"/>
                                     </button>
                                 </subviews>
@@ -78,9 +78,9 @@ sample videos?</string>
                                     <constraint firstItem="MUF-rY-GJ1" firstAttribute="top" secondItem="xrT-iB-NH8" secondAttribute="top" id="1IA-Lm-qh4"/>
                                     <constraint firstItem="vi8-xw-7kB" firstAttribute="centerX" secondItem="xrT-iB-NH8" secondAttribute="centerX" id="Akn-Tm-SS5"/>
                                     <constraint firstItem="MUF-rY-GJ1" firstAttribute="leading" secondItem="xrT-iB-NH8" secondAttribute="leading" id="Bkq-ZL-1YJ"/>
-                                    <constraint firstItem="vi8-xw-7kB" firstAttribute="top" secondItem="MUF-rY-GJ1" secondAttribute="bottom" constant="20" id="FUf-tJ-z66"/>
-                                    <constraint firstItem="t3T-4Y-djt" firstAttribute="top" secondItem="vi8-xw-7kB" secondAttribute="bottom" constant="20" id="QrO-6S-p60"/>
-                                    <constraint firstItem="WTF-bK-zov" firstAttribute="top" secondItem="t3T-4Y-djt" secondAttribute="bottom" constant="20" id="XbB-WQ-W8V"/>
+                                    <constraint firstItem="vi8-xw-7kB" firstAttribute="top" secondItem="MUF-rY-GJ1" secondAttribute="bottom" constant="44" id="FUf-tJ-z66"/>
+                                    <constraint firstItem="t3T-4Y-djt" firstAttribute="top" secondItem="vi8-xw-7kB" secondAttribute="bottom" constant="44" id="QrO-6S-p60"/>
+                                    <constraint firstItem="WTF-bK-zov" firstAttribute="top" secondItem="t3T-4Y-djt" secondAttribute="bottom" constant="19" id="XbB-WQ-W8V"/>
                                     <constraint firstAttribute="trailing" secondItem="MUF-rY-GJ1" secondAttribute="trailing" id="cRG-ws-H76"/>
                                     <constraint firstItem="WTF-bK-zov" firstAttribute="centerX" secondItem="xrT-iB-NH8" secondAttribute="centerX" id="kg2-ap-Ue7"/>
                                     <constraint firstAttribute="bottom" secondItem="WTF-bK-zov" secondAttribute="bottom" id="prR-Ip-e1r"/>
@@ -103,7 +103,7 @@ sample videos?</string>
                                 <state key="disabled" image="btGetStartedG"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-8h-vrC">
-                                <rect key="frame" x="41" y="-37" width="332" height="332"/>
+                                <rect key="frame" x="41" y="-86" width="332" height="332"/>
                                 <state key="normal" image="btAddPhoto"/>
                             </button>
                         </subviews>
