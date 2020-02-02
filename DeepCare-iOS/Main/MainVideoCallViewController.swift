@@ -12,6 +12,7 @@ import AVFoundation
 class MainVideoCallViewController: UIViewController {
 
     @IBOutlet weak var frontCameraView: UIView!
+    @IBOutlet weak var talkerNameLabel: UILabel!
     
     var session: AVCaptureSession?
     var input: AVCaptureDeviceInput?
@@ -23,6 +24,10 @@ class MainVideoCallViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         openCamera()
+    }
+    
+    @IBAction func hungUpButtonAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func getDevice(position: AVCaptureDevice.Position) -> AVCaptureDevice? {
