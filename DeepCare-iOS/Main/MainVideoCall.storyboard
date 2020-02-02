@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3A-bQ-rWJ">
-                                <rect key="frame" x="0.0" y="112" width="414" height="750"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="805"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0R-Bc-9i7">
@@ -51,7 +51,7 @@
                         </subviews>
                         <color key="backgroundColor" name="veryLightPinkTwo"/>
                         <constraints>
-                            <constraint firstItem="O3A-bQ-rWJ" firstAttribute="bottom" secondItem="Mtm-Lj-6Bd" secondAttribute="bottom" id="3cI-km-0T6"/>
+                            <constraint firstItem="O3A-bQ-rWJ" firstAttribute="bottom" secondItem="Mtm-Lj-6Bd" secondAttribute="bottom" constant="55" id="3cI-km-0T6"/>
                             <constraint firstItem="O3A-bQ-rWJ" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" id="Fop-tI-tCb"/>
                             <constraint firstItem="0nv-dk-i5B" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" constant="24" id="Hxe-oA-JE1"/>
                             <constraint firstItem="E0R-Bc-9i7" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" id="MxO-NI-9WS"/>

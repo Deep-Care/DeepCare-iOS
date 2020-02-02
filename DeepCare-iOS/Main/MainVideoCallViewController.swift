@@ -29,7 +29,7 @@ class MainVideoCallViewController: UIViewController {
         // Do any additional setup after loading the view.
         talkerNameLabel.text = data?.name
         openCamera()
-        fetchDataFromFirebase()
+        fetchVideo()
         
         let audioSession = AVAudioSession.sharedInstance()
 
@@ -41,28 +41,16 @@ class MainVideoCallViewController: UIViewController {
         }  
     }
     
-    func fetchDataFromFirebase() {
-        /*
-        // Points to the root reference
-        let storage = Storage.storage().reference(withPath: "Actual/1.MP4")
-        storage.getData(maxSize: 4 * 1024 * 1024) { [weak self](data, error) in
-            if let error = error {
-                print("Got an error fetching: \(error.localizedDescription)")
-                return
-            }
-            if let data = data {
-                print(data)
-            }
-        }
-        */
-        let videoURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/deepcare-ios.appspot.com/o/Actual%2F0.MP4?alt=media&token=87b282e7-dd1e-40ea-9628-e7b83e2cfe5e")
+    func fetchVideo() {
+        let videoURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/deepcare-ios.appspot.com/o/Actual%2FElon.mp4?alt=media&token=56e58236-6ff0-408b-82a5-ed0ddac0526b")
         
         let asset = AVAsset(url: videoURL!)
         let playerItem = AVPlayerItem(asset: asset)
         let player = AVPlayer(playerItem: playerItem)
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = talkerView.bounds //bounds of the view in which AVPlayer should be displayed
-        playerLayer.videoGravity = .resizeAspect
+//        playerLayer.frame.size.height = talkerView.bounds.height
+        playerLayer.videoGravity = .resizeAspectFill
         talkerView.layer.addSublayer(playerLayer)
         player.volume = 10
         player.isMuted = false

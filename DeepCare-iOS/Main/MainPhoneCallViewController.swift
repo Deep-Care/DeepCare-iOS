@@ -17,7 +17,8 @@ class MainPhoneCallViewController: UIViewController {
     
     var data:Person?
     private var audioPlayer: AVPlayer?
-
+    private var audioURLS = [String]()
+    private var randNum = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,15 +36,31 @@ class MainPhoneCallViewController: UIViewController {
             print("error.")
         }  
         
-        guard let audioURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/deepcare-ios.appspot.com/o/Audio%2F0.wav?alt=media&token=280e573e-029f-41aa-b8f9-8fe4a8d07dd2") else { return }
+        fetchAudios()
         
-        audioPlayer = AVPlayer(url: audioURL as URL)
-        audioPlayer?.isMuted = false
-        audioPlayer?.play()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        playAudio(audioURLS[0])
+        
     }
     
     @IBAction func hungUpButtonAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
+    private func playAudio(_ url: String) {
+        guard let audioURL = URL(string: url) else { return }
+        
+        audioPlayer = AVPlayer(url: audioURL as URL)
+        audioPlayer?.volume = 30
+        audioPlayer?.isMuted = false
+        audioPlayer?.play()
+    }
+    
+    private func fetchAudios(){
+        audioURLS.append("https://firebasestorage.googleapis.com/v0/b/deepcare-ios.appspot.com/o/Audio%2FElonAudio.mp3?alt=media&token=74e32ec6-49cd-4675-a2d9-8a252c2955f9")
+    }
 }
