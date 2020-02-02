@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3A-bQ-rWJ">
+                                <rect key="frame" x="0.0" y="112" width="414" height="750"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0R-Bc-9i7">
                                 <rect key="frame" x="0.0" y="111" width="414" height="1"/>
                                 <color key="backgroundColor" name="dirtBrown"/>
@@ -47,11 +51,15 @@
                         </subviews>
                         <color key="backgroundColor" name="veryLightPinkTwo"/>
                         <constraints>
+                            <constraint firstItem="O3A-bQ-rWJ" firstAttribute="bottom" secondItem="Mtm-Lj-6Bd" secondAttribute="bottom" id="3cI-km-0T6"/>
+                            <constraint firstItem="O3A-bQ-rWJ" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" id="Fop-tI-tCb"/>
                             <constraint firstItem="0nv-dk-i5B" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" constant="24" id="Hxe-oA-JE1"/>
                             <constraint firstItem="E0R-Bc-9i7" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" id="MxO-NI-9WS"/>
                             <constraint firstItem="E0R-Bc-9i7" firstAttribute="top" secondItem="ATo-0H-mVy" secondAttribute="bottom" constant="13" id="PBK-DU-kZJ"/>
                             <constraint firstItem="0nv-dk-i5B" firstAttribute="top" secondItem="E0R-Bc-9i7" secondAttribute="bottom" constant="24" id="Q1r-l3-wXc"/>
                             <constraint firstItem="Mtm-Lj-6Bd" firstAttribute="trailing" secondItem="E0R-Bc-9i7" secondAttribute="trailing" id="dNh-aO-iVF"/>
+                            <constraint firstItem="O3A-bQ-rWJ" firstAttribute="top" secondItem="E0R-Bc-9i7" secondAttribute="bottom" id="e8g-Et-D1E"/>
+                            <constraint firstItem="Mtm-Lj-6Bd" firstAttribute="trailing" secondItem="O3A-bQ-rWJ" secondAttribute="trailing" id="f6K-UG-8Oy"/>
                             <constraint firstItem="ATo-0H-mVy" firstAttribute="leading" secondItem="Mtm-Lj-6Bd" secondAttribute="leading" constant="24" id="fS7-AZ-Tih"/>
                             <constraint firstItem="E0R-Bc-9i7" firstAttribute="top" secondItem="Mtm-Lj-6Bd" secondAttribute="top" constant="67" id="ihp-eO-7Km"/>
                             <constraint firstItem="Mtm-Lj-6Bd" firstAttribute="bottom" secondItem="caN-Bs-GdY" secondAttribute="bottom" constant="40" id="vne-QE-3ff"/>
@@ -62,11 +70,12 @@
                     <connections>
                         <outlet property="frontCameraView" destination="0nv-dk-i5B" id="cH6-X7-x4O"/>
                         <outlet property="talkerNameLabel" destination="ATo-0H-mVy" id="nhs-EL-iUx"/>
+                        <outlet property="talkerView" destination="O3A-bQ-rWJ" id="eUZ-YT-L4i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBV-FG-jM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="171" y="153"/>
+            <point key="canvasLocation" x="169.56521739130437" y="152.67857142857142"/>
         </scene>
     </scenes>
     <resources>
