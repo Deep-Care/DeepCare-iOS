@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uyW-4Z-oQ1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-bd-nhC">
-                                <rect key="frame" x="24" y="-202.5" width="227" height="67.5"/>
+                                <rect key="frame" x="24" y="40.5" width="227" height="67.5"/>
                                 <string key="text">Who do you want 
 to talk with?</string>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="28"/>
@@ -25,7 +26,7 @@ to talk with?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrT-iB-NH8">
-                                <rect key="frame" x="24" y="295" width="366" height="359"/>
+                                <rect key="frame" x="24" y="372" width="366" height="282"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUF-rY-GJ1">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
@@ -34,10 +35,7 @@ to talk with?</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                                 <color key="textColor" name="dirtBrown"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="uyW-4Z-oQ1" id="XeL-XP-l07"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -59,19 +57,19 @@ to talk with?</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icThreeOvalN" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-xw-7kB">
-                                        <rect key="frame" x="175" y="94" width="16" height="72"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="icThreeOvalN" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-xw-7kB">
+                                        <rect key="frame" x="175" y="94" width="16" height="36"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3T-4Y-djt">
-                                        <rect key="frame" x="109" y="210" width="148.5" height="48"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3T-4Y-djt">
+                                        <rect key="frame" x="109" y="174" width="148.5" height="48"/>
                                         <string key="text">Do you have any
 sample videos?</string>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" name="cocoa"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
-                                        <rect key="frame" x="18" y="277" width="330" height="82"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
+                                        <rect key="frame" x="18" y="241" width="330" height="41"/>
                                         <state key="normal" image="btAddVideoN"/>
                                     </button>
                                 </subviews>
@@ -84,6 +82,7 @@ sample videos?</string>
                                     <constraint firstItem="vi8-xw-7kB" firstAttribute="top" secondItem="MUF-rY-GJ1" secondAttribute="bottom" constant="44" id="FUf-tJ-z66"/>
                                     <constraint firstItem="t3T-4Y-djt" firstAttribute="top" secondItem="vi8-xw-7kB" secondAttribute="bottom" constant="44" id="QrO-6S-p60"/>
                                     <constraint firstItem="WTF-bK-zov" firstAttribute="top" secondItem="t3T-4Y-djt" secondAttribute="bottom" constant="19" id="XbB-WQ-W8V"/>
+                                    <constraint firstAttribute="height" constant="282" id="aNm-Zs-Iky"/>
                                     <constraint firstAttribute="trailing" secondItem="MUF-rY-GJ1" secondAttribute="trailing" id="cRG-ws-H76"/>
                                     <constraint firstItem="WTF-bK-zov" firstAttribute="centerX" secondItem="xrT-iB-NH8" secondAttribute="centerX" id="kg2-ap-Ue7"/>
                                     <constraint firstAttribute="bottom" secondItem="WTF-bK-zov" secondAttribute="bottom" id="prR-Ip-e1r"/>
@@ -102,12 +101,20 @@ sample videos?</string>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4J-6S-dWy">
                                 <rect key="frame" x="23" y="694" width="368" height="100"/>
-                                <state key="normal" image="btGetStartedY"/>
+                                <state key="normal" image="btGetStartedG"/>
                                 <state key="disabled" image="btGetStartedG"/>
+                                <state key="selected" image="btGetStartedY"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-8h-vrC">
-                                <rect key="frame" x="41" y="-86" width="332" height="332"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-8h-vrC">
+                                <rect key="frame" x="124" y="157" width="166" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="VBG-KT-IUc"/>
+                                    <constraint firstAttribute="height" constant="166" id="q5Q-cj-goo"/>
+                                </constraints>
                                 <state key="normal" image="btAddPhoto"/>
+                                <connections>
+                                    <action selector="chooseImageButtonAction:" destination="uyW-4Z-oQ1" eventType="touchUpInside" id="hQB-sN-xRT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="veryLightPinkTwo"/>
@@ -127,6 +134,12 @@ sample videos?</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lXs-bL-Nw8"/>
                     </view>
+                    <connections>
+                        <outlet property="imageButton" destination="58i-8h-vrC" id="lOH-ux-Liz"/>
+                        <outlet property="talkerNameTextField" destination="bhc-cE-zE8" id="uA1-9T-4Xn"/>
+                        <outlet property="videoButton" destination="WTF-bK-zov" id="RGf-ry-bXw"/>
+                        <outlet property="videoLabel" destination="t3T-4Y-djt" id="2Xm-yg-JNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8L-dj-7bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
