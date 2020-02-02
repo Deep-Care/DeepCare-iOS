@@ -10,21 +10,23 @@ import UIKit
 
 class EnrollSecondPageViewController: UIViewController {
 
+    @IBOutlet weak var videoLabel: UILabel!
+    @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var talkerNameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        talkerNameTextField.delegate = self
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension EnrollSecondPageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        talkerNameTextField.resignFirstResponder()
+        
+        return true
     }
-    */
-
 }

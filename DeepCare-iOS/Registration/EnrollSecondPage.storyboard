@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uyW-4Z-oQ1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-bd-nhC">
-                                <rect key="frame" x="24" y="-202.5" width="227" height="67.5"/>
+                                <rect key="frame" x="24" y="98.5" width="227" height="67.5"/>
                                 <string key="text">Who do you want 
 to talk with?</string>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="28"/>
@@ -25,7 +26,7 @@ to talk with?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrT-iB-NH8">
-                                <rect key="frame" x="24" y="295" width="366" height="359"/>
+                                <rect key="frame" x="24" y="430" width="366" height="282"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUF-rY-GJ1">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
@@ -34,7 +35,7 @@ to talk with?</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
                                                 <color key="textColor" name="dirtBrown"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -57,18 +58,18 @@ to talk with?</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icThreeOvalN" translatesAutoresizingMaskIntoConstraints="NO" id="vi8-xw-7kB">
-                                        <rect key="frame" x="175" y="94" width="16" height="72"/>
+                                        <rect key="frame" x="179" y="94" width="8" height="36"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3T-4Y-djt">
-                                        <rect key="frame" x="109" y="210" width="148.5" height="48"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3T-4Y-djt">
+                                        <rect key="frame" x="109" y="174" width="148.5" height="48"/>
                                         <string key="text">Do you have any
 sample videos?</string>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <color key="textColor" name="cocoa"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
-                                        <rect key="frame" x="18" y="277" width="330" height="82"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
+                                        <rect key="frame" x="100.5" y="241" width="165" height="41"/>
                                         <state key="normal" image="btAddVideoN"/>
                                     </button>
                                 </subviews>
@@ -81,29 +82,31 @@ sample videos?</string>
                                     <constraint firstItem="vi8-xw-7kB" firstAttribute="top" secondItem="MUF-rY-GJ1" secondAttribute="bottom" constant="44" id="FUf-tJ-z66"/>
                                     <constraint firstItem="t3T-4Y-djt" firstAttribute="top" secondItem="vi8-xw-7kB" secondAttribute="bottom" constant="44" id="QrO-6S-p60"/>
                                     <constraint firstItem="WTF-bK-zov" firstAttribute="top" secondItem="t3T-4Y-djt" secondAttribute="bottom" constant="19" id="XbB-WQ-W8V"/>
+                                    <constraint firstAttribute="height" constant="282" id="aNm-Zs-Iky"/>
                                     <constraint firstAttribute="trailing" secondItem="MUF-rY-GJ1" secondAttribute="trailing" id="cRG-ws-H76"/>
                                     <constraint firstItem="WTF-bK-zov" firstAttribute="centerX" secondItem="xrT-iB-NH8" secondAttribute="centerX" id="kg2-ap-Ue7"/>
                                     <constraint firstAttribute="bottom" secondItem="WTF-bK-zov" secondAttribute="bottom" id="prR-Ip-e1r"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HDp-fJ-Hlh">
-                                <rect key="frame" x="187" y="824" width="40" height="16"/>
+                                <rect key="frame" x="195" y="832" width="24" height="8"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ovalInActive" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-rz-uZo">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="8" height="8"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ovalActive" translatesAutoresizingMaskIntoConstraints="NO" id="6tg-ck-Kko">
-                                        <rect key="frame" x="24" y="0.0" width="16" height="16"/>
+                                        <rect key="frame" x="16" y="0.0" width="8" height="8"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4J-6S-dWy">
-                                <rect key="frame" x="23" y="694" width="368" height="100"/>
-                                <state key="normal" image="btGetStartedY"/>
+                                <rect key="frame" x="23" y="752" width="368" height="50"/>
+                                <state key="normal" image="btGetStartedG"/>
                                 <state key="disabled" image="btGetStartedG"/>
+                                <state key="selected" image="btGetStartedY"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-8h-vrC">
-                                <rect key="frame" x="41" y="-86" width="332" height="332"/>
+                                <rect key="frame" x="124" y="215" width="166" height="166"/>
                                 <state key="normal" image="btAddPhoto"/>
                             </button>
                         </subviews>
@@ -124,6 +127,11 @@ sample videos?</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lXs-bL-Nw8"/>
                     </view>
+                    <connections>
+                        <outlet property="talkerNameTextField" destination="bhc-cE-zE8" id="uA1-9T-4Xn"/>
+                        <outlet property="videoButton" destination="WTF-bK-zov" id="RGf-ry-bXw"/>
+                        <outlet property="videoLabel" destination="t3T-4Y-djt" id="2Xm-yg-JNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8L-dj-7bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
