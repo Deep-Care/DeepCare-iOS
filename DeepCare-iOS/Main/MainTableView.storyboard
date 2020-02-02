@@ -79,6 +79,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="talkerImageView" destination="vwd-H4-ccw" id="h0L-37-cKh"/>
+                                            <outlet property="talkerNameLabel" destination="iyC-2L-dkh" id="2zp-aF-axo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -124,6 +128,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3jb-tr-F0Y"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ibi-YL-u61" id="083-N3-HOk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3S-jT-VQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

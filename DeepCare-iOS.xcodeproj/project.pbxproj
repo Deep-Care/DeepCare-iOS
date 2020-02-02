@@ -18,6 +18,7 @@
 		03BF078923E66C6D006E28BF /* MainPhoneCall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF078823E66C6D006E28BF /* MainPhoneCall.storyboard */; };
 		03BF078B23E6A3EB006E28BF /* MainVideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF078A23E6A3EB006E28BF /* MainVideoCallViewController.swift */; };
 		03BF078D23E6C2CA006E28BF /* MainPhoneCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF078C23E6C2CA006E28BF /* MainPhoneCallViewController.swift */; };
+		03BF079223E6CBEF006E28BF /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF079123E6CBEF006E28BF /* Dummy.swift */; };
 		560E818C23E56D1D007722CE /* EnrollFirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */; };
 		560E818E23E56D34007722CE /* EnrollSecondPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */; };
 		560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */; };
@@ -41,6 +42,7 @@
 		03BF078823E66C6D006E28BF /* MainPhoneCall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPhoneCall.storyboard; sourceTree = "<group>"; };
 		03BF078A23E6A3EB006E28BF /* MainVideoCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVideoCallViewController.swift; sourceTree = "<group>"; };
 		03BF078C23E6C2CA006E28BF /* MainPhoneCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPhoneCallViewController.swift; sourceTree = "<group>"; };
+		03BF079123E6CBEF006E28BF /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollFirstPage.storyboard; sourceTree = "<group>"; };
 		560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollSecondPage.storyboard; sourceTree = "<group>"; };
 		560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollFirstPageViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		03AD42D323E56B2500622AEC /* DeepCare-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				03BF079023E6CBE1006E28BF /* Model */,
 				0310493023E62E4100F9BE2B /* Extension */,
 				560E819323E56D65007722CE /* Main */,
 				560E818A23E56CBD007722CE /* Registration */,
@@ -104,6 +107,14 @@
 				0310492E23E60B5C00F9BE2B /* Color.xcassets */,
 			);
 			path = "DeepCare-iOS";
+			sourceTree = "<group>";
+		};
+		03BF079023E6CBE1006E28BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BF079123E6CBEF006E28BF /* Dummy.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		35F7E954D9F51E670C490EEB /* Frameworks */ = {
@@ -270,6 +281,7 @@
 			files = (
 				03BF078D23E6C2CA006E28BF /* MainPhoneCallViewController.swift in Sources */,
 				0310493223E62E9F00F9BE2B /* UIView+Extension.swift in Sources */,
+				03BF079223E6CBEF006E28BF /* Dummy.swift in Sources */,
 				03BF078B23E6A3EB006E28BF /* MainVideoCallViewController.swift in Sources */,
 				03AD42D523E56B2500622AEC /* AppDelegate.swift in Sources */,
 				560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */,
