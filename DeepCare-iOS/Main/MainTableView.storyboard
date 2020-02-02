@@ -30,10 +30,16 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-k9-dBv">
                                                     <rect key="frame" x="308" y="-8" width="88" height="88"/>
                                                     <state key="normal" image="icVideo"/>
+                                                    <connections>
+                                                        <segue destination="JgX-jS-csU" kind="show" id="Mc5-P4-lr6"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z6-A5-7Dr">
                                                     <rect key="frame" x="212" y="-8" width="88" height="88"/>
                                                     <state key="normal" image="icVoiceCopy"/>
+                                                    <connections>
+                                                        <segue destination="P93-pz-Pae" kind="show" id="Odl-Gh-AXx"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suji Kim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyC-2L-dkh">
                                                     <rect key="frame" x="90" y="25" width="65" height="22"/>
@@ -73,6 +79,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="talkerImageView" destination="vwd-H4-ccw" id="h0L-37-cKh"/>
+                                            <outlet property="talkerNameLabel" destination="iyC-2L-dkh" id="2zp-aF-axo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -118,10 +128,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3jb-tr-F0Y"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ibi-YL-u61" id="083-N3-HOk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3S-jT-VQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="87.723214285714278"/>
+        </scene>
+        <!--MainPhoneCall-->
+        <scene sceneID="pgh-mt-LwX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainPhoneCall" id="P93-pz-Pae" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dhi-R8-gcu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rb-hy-XVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="-136"/>
+        </scene>
+        <!--MainVideoCall-->
+        <scene sceneID="uyW-4I-E7e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainVideoCall" id="JgX-jS-csU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Xwq-WL-F1y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9V1-BV-GGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="-89"/>
         </scene>
         <!--EnrollSecondPage-->
         <scene sceneID="aOs-Oh-lxn">

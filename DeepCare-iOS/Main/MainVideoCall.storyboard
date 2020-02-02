@@ -40,6 +40,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caN-Bs-GdY">
                                 <rect key="frame" x="147" y="702" width="120" height="120"/>
                                 <state key="normal" image="icOffcall"/>
+                                <connections>
+                                    <action selector="hungUpButtonAction:" destination="Kft-NF-Vb2" eventType="touchUpInside" id="NE9-6K-Fr9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="veryLightPinkTwo"/>
@@ -58,6 +61,7 @@
                     </view>
                     <connections>
                         <outlet property="frontCameraView" destination="0nv-dk-i5B" id="cH6-X7-x4O"/>
+                        <outlet property="talkerNameLabel" destination="ATo-0H-mVy" id="nhs-EL-iUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBV-FG-jM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

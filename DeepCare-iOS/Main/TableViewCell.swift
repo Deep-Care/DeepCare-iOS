@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var talkerImageView: UIImageView!
+    @IBOutlet weak var talkerNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,12 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configuration(_ person: Person) {
+        let url = URL(string: person.image)
+        talkerNameLabel.text = person.name
+        talkerImageView.kf.setImage(with: url)
     }
 
 }
