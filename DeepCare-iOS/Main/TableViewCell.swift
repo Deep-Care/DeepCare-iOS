@@ -7,13 +7,18 @@
 //
 
 import UIKit
-import Kingfisher
+
+protocol TalkerTableViewCellDelegate: AnyObject {
+    func talkerInformation(_ tableViewCell: TableViewCell, button: String, talker: Person)
+}
 
 class TableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var talkerImageView: UIImageView!
     @IBOutlet weak var talkerNameLabel: UILabel!
+
+    weak var delegate: TalkerTableViewCellDelegate?
+    var talker: Person?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,9 +32,20 @@ class TableViewCell: UITableViewCell {
     }
     
     func configuration(_ person: Person) {
-        let url = URL(string: person.image)
         talkerNameLabel.text = person.name
-        talkerImageView.kf.setImage(with: url)
+        talkerImageView.image = UIImage(named: person.image)
+        talker = person
     }
 
+    @IBAction func videoCallButtonAction(_ sender: Any) {
+        if let delegates = delegate, let person = talker {
+            delegates.talkerInformation(self, button: "Video", talker: person)
+        }
+    }
+    
+    @IBAction func phoneCallButtonAction(_ sender: Any) {
+        if let delegates = delegate, let person = talker {
+            delegates.talkerInformation(self, button: "Phone", talker: person)
+        }
+    }
 }

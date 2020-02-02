@@ -31,14 +31,14 @@
                                                     <rect key="frame" x="308" y="-8" width="88" height="88"/>
                                                     <state key="normal" image="icVideo"/>
                                                     <connections>
-                                                        <segue destination="JgX-jS-csU" kind="show" id="Mc5-P4-lr6"/>
+                                                        <action selector="videoCallButtonAction:" destination="ESS-bk-xL7" eventType="touchUpInside" id="g9z-No-Ejr"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z6-A5-7Dr">
                                                     <rect key="frame" x="212" y="-8" width="88" height="88"/>
                                                     <state key="normal" image="icVoiceCopy"/>
                                                     <connections>
-                                                        <segue destination="P93-pz-Pae" kind="show" id="Odl-Gh-AXx"/>
+                                                        <action selector="phoneCallButtonAction:" destination="ESS-bk-xL7" eventType="touchUpInside" id="5O0-uc-KD8"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suji Kim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyC-2L-dkh">
@@ -47,7 +47,7 @@
                                                     <color key="textColor" name="dirtBrown"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-H4-ccw">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-H4-ccw">
                                                     <rect key="frame" x="22" y="12" width="48" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="Y0y-aJ-38C"/>
@@ -154,7 +154,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9V1-BV-GGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="626" y="-89"/>
+            <point key="canvasLocation" x="749" y="-61"/>
         </scene>
         <!--EnrollSecondPage-->
         <scene sceneID="aOs-Oh-lxn">

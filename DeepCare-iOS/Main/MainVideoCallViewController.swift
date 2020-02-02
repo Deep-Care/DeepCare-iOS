@@ -19,10 +19,13 @@ class MainVideoCallViewController: UIViewController {
     var output: AVCaptureStillImageOutput?
     var previewLayer: AVCaptureVideoPreviewLayer?
     
+    var data: Person?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        talkerNameLabel.text = data?.name
         openCamera()
     }
     
