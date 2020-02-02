@@ -1,5 +1,22 @@
 PODS:
   - Alamofire (4.8.2)
+  - Firebase/CoreOnly (6.3.0):
+    - FirebaseCore (= 6.0.3)
+  - Firebase/Storage (6.3.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.2.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.0.3):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseStorage (3.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/Environment (6.2.1)
+  - GoogleUtilities/Logger (6.2.1):
+    - GoogleUtilities/Environment
+  - GTMSessionFetcher/Core (1.2.2)
   - Kingfisher (5.6.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
@@ -11,6 +28,7 @@ PODS:
   - SwiftyBeaver (1.7.0)
 
 DEPENDENCIES:
+  - Firebase/Storage
   - Kingfisher
   - Moya
   - SwiftLint
@@ -19,6 +37,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Firebase
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseStorage
+    - GoogleUtilities
+    - GTMSessionFetcher
     - Kingfisher
     - Moya
     - Result
@@ -27,12 +51,18 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Firebase: 8432d732974498afd5987e9001a05f90f1a3d625
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 68f8a7f50cdae542715d4e86afa37c4067217dcb
+  FirebaseStorage: 926d41552072b9fee67aa645760f05f87b7ce604
+  GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
   SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
 
-PODFILE CHECKSUM: 6453a68a85c6aa8700013fcd8d73d7e8af1bef7e
+PODFILE CHECKSUM: 17b1fe53c9c4ffce0cdecc72d447aea1335d8d67
 
 COCOAPODS: 1.7.3

@@ -12,6 +12,7 @@ target 'DeepCare-iOS' do
   # Utils
   pod 'Kingfisher'
   pod 'SwiftLint'
+  pod 'Firebase/Storage'
 
   # Logger
   pod 'SwiftyBeaver'
