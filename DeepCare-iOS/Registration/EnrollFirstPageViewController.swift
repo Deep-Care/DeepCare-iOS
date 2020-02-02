@@ -12,12 +12,13 @@ class EnrollFirstPageViewController: UIViewController {
 
     @IBOutlet weak var emergencyButton: UIButton!
     @IBOutlet weak var privacyButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.hidesBarsOnTap = true
-        // Do any additional setup after loading the view.
+        nameTextField.delegate = self
+        nameTextField.attributedPlaceholder = NSAttributedString(string: "add your name.", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.4745098039, green: 0.4745098039, blue: 0.4745098039, alpha: 1)])
     }
     
     
@@ -33,14 +34,12 @@ class EnrollFirstPageViewController: UIViewController {
     @IBAction func nextStep(_ sender: Any) {
         performSegue(withIdentifier: "nextController", sender: self)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension EnrollFirstPageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        return true
     }
-    */
-
 }
