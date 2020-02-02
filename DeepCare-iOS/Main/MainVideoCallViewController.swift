@@ -27,7 +27,7 @@ class MainVideoCallViewController: UIViewController {
     }
     
     @IBAction func hungUpButtonAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     func getDevice(position: AVCaptureDevice.Position) -> AVCaptureDevice? {
