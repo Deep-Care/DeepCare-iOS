@@ -35,6 +35,9 @@ to talk with?</string>
                                                 <color key="textColor" name="dirtBrown"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="uyW-4Z-oQ1" id="XeL-XP-l07"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
