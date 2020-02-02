@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uyW-4Z-oQ1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -71,6 +70,9 @@ sample videos?</string>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-bK-zov">
                                         <rect key="frame" x="18" y="241" width="330" height="41"/>
                                         <state key="normal" image="btAddVideoN"/>
+                                        <connections>
+                                            <action selector="chooseVideoButtonAction:" destination="uyW-4Z-oQ1" eventType="touchUpInside" id="haN-3p-YKf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="tintColor" name="dirtBrown"/>
@@ -99,11 +101,14 @@ sample videos?</string>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4J-6S-dWy">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4J-6S-dWy">
                                 <rect key="frame" x="23" y="694" width="368" height="100"/>
                                 <state key="normal" image="btGetStartedG"/>
                                 <state key="disabled" image="btGetStartedG"/>
                                 <state key="selected" image="btGetStartedY"/>
+                                <connections>
+                                    <segue destination="pHb-Qn-Ye2" kind="show" id="e7J-6M-dQN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58i-8h-vrC">
                                 <rect key="frame" x="124" y="157" width="166" height="166"/>
@@ -135,8 +140,10 @@ sample videos?</string>
                         <viewLayoutGuide key="safeArea" id="lXs-bL-Nw8"/>
                     </view>
                     <connections>
+                        <outlet property="getStartedButton" destination="P4J-6S-dWy" id="LYu-Yn-cv2"/>
                         <outlet property="imageButton" destination="58i-8h-vrC" id="lOH-ux-Liz"/>
                         <outlet property="talkerNameTextField" destination="bhc-cE-zE8" id="uA1-9T-4Xn"/>
+                        <outlet property="threeOvalImageView" destination="vi8-xw-7kB" id="rd2-zm-Nnw"/>
                         <outlet property="videoButton" destination="WTF-bK-zov" id="RGf-ry-bXw"/>
                         <outlet property="videoLabel" destination="t3T-4Y-djt" id="2Xm-yg-JNg"/>
                     </connections>
@@ -144,6 +151,16 @@ sample videos?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8L-dj-7bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84.057971014492765" y="197.54464285714286"/>
+        </scene>
+        <!--MainTableView-->
+        <scene sceneID="eyZ-4I-GKH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainTableView" id="pHb-Qn-Ye2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yby-eG-hz2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjC-kE-xLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="205"/>
         </scene>
     </scenes>
     <resources>
