@@ -14,13 +14,14 @@
 		03AD42DE23E56B2600622AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AD42DD23E56B2600622AEC /* Assets.xcassets */; };
 		03AD42E123E56B2600622AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AD42DF23E56B2600622AEC /* LaunchScreen.storyboard */; };
 		03BF078323E66BDB006E28BF /* MainTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF078223E66BDB006E28BF /* MainTableView.storyboard */; };
-		03BF078523E66C54006E28BF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF078423E66C54006E28BF /* MainTableViewController.swift */; };
 		03BF078723E66C63006E28BF /* MainVideoCall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF078623E66C63006E28BF /* MainVideoCall.storyboard */; };
 		03BF078923E66C6D006E28BF /* MainPhoneCall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF078823E66C6D006E28BF /* MainPhoneCall.storyboard */; };
 		560E818C23E56D1D007722CE /* EnrollFirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */; };
 		560E818E23E56D34007722CE /* EnrollSecondPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */; };
 		560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */; };
 		560E819223E56D62007722CE /* EnrollSecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560E819123E56D61007722CE /* EnrollSecondPageViewController.swift */; };
+		5650771D23E6779F00A663A0 /* MainTableViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650771C23E6779F00A663A0 /* MainTableViewContoller.swift */; };
+		5650771F23E6783700A663A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650771E23E6783700A663A0 /* TableViewCell.swift */; };
 		DB0B5D7DA2FC814015D2074B /* Pods_DeepCare_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760B4BF5FD72176E0C3BE086 /* Pods_DeepCare_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,13 +35,14 @@
 		03AD42E023E56B2600622AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03AD42E223E56B2600622AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BF078223E66BDB006E28BF /* MainTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTableView.storyboard; sourceTree = "<group>"; };
-		03BF078423E66C54006E28BF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		03BF078623E66C63006E28BF /* MainVideoCall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainVideoCall.storyboard; sourceTree = "<group>"; };
 		03BF078823E66C6D006E28BF /* MainPhoneCall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPhoneCall.storyboard; sourceTree = "<group>"; };
 		560E818B23E56D1D007722CE /* EnrollFirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollFirstPage.storyboard; sourceTree = "<group>"; };
 		560E818D23E56D34007722CE /* EnrollSecondPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnrollSecondPage.storyboard; sourceTree = "<group>"; };
 		560E818F23E56D51007722CE /* EnrollFirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollFirstPageViewController.swift; sourceTree = "<group>"; };
 		560E819123E56D61007722CE /* EnrollSecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollSecondPageViewController.swift; sourceTree = "<group>"; };
+		5650771C23E6779F00A663A0 /* MainTableViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewContoller.swift; sourceTree = "<group>"; };
+		5650771E23E6783700A663A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5D446593A9712C71404A3EDA /* Pods-DeepCare-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepCare-iOS.release.xcconfig"; path = "Target Support Files/Pods-DeepCare-iOS/Pods-DeepCare-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		760B4BF5FD72176E0C3BE086 /* Pods_DeepCare_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepCare_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF0DFAF2EFE9C9B66AD244C /* Pods-DeepCare-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepCare-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DeepCare-iOS/Pods-DeepCare-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,9 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				03BF078223E66BDB006E28BF /* MainTableView.storyboard */,
-				03BF078423E66C54006E28BF /* MainTableViewController.swift */,
 				03BF078623E66C63006E28BF /* MainVideoCall.storyboard */,
 				03BF078823E66C6D006E28BF /* MainPhoneCall.storyboard */,
+				5650771C23E6779F00A663A0 /* MainTableViewContoller.swift */,
+				5650771E23E6783700A663A0 /* TableViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -262,8 +265,9 @@
 				0310493223E62E9F00F9BE2B /* UIView+Extension.swift in Sources */,
 				03AD42D523E56B2500622AEC /* AppDelegate.swift in Sources */,
 				560E819023E56D51007722CE /* EnrollFirstPageViewController.swift in Sources */,
+				5650771D23E6779F00A663A0 /* MainTableViewContoller.swift in Sources */,
 				560E819223E56D62007722CE /* EnrollSecondPageViewController.swift in Sources */,
-				03BF078523E66C54006E28BF /* MainTableViewController.swift in Sources */,
+				5650771F23E6783700A663A0 /* TableViewCell.swift in Sources */,
 				03AD42D723E56B2500622AEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
