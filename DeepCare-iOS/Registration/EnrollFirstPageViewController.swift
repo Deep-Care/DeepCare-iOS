@@ -10,13 +10,29 @@ import UIKit
 
 class EnrollFirstPageViewController: UIViewController {
 
+    @IBOutlet weak var emergencyButton: UIButton!
+    @IBOutlet weak var privacyButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        navigationController?.hidesBarsOnTap = true
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func onClickEmergency(_ sender: Any) {
+        emergencyButton.setImage(UIImage(named: "icChecked"), for: .normal)
+    }
+    
 
+    @IBAction func onClickPrivacy(_ sender: Any) {
+        privacyButton.setImage(UIImage(named: "icChecked"), for: .normal)
+    }
+    
+    @IBAction func nextStep(_ sender: Any) {
+        performSegue(withIdentifier: "nextController", sender: self)
+    }
     /*
     // MARK: - Navigation
 
